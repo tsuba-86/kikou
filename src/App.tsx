@@ -6,6 +6,7 @@
 import { useState } from 'react';
 import { Menu, Mail, AlertCircle, MessageSquare, BarChart3, CheckCircle, Handshake, Brush, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 
 const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScWCMDxMJgcja8wlKa9u2X_pGidkoC9tOb0iOu9fJY14m14jw/viewform?usp=sharing&ouid=105401518336407820619";
 
@@ -612,6 +613,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
